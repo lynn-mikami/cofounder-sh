@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific
+startup.md
+actions.md
+twitter_cookies.txt
+*.log
+tmp/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Browser data
+.browser_data/
+*.cookies
+*.session
+
+# Playwright
+**/test-results/
+**/playwright-report/
+**/playwright/.cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# API Keys and Secrets
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache
+.cache/
+.ruff_cache/
+
+# Misc
+*.bak
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
