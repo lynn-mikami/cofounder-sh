@@ -38,7 +38,7 @@ All you need to do is this:
 
 And watch the magic:
 
-https://github.com/user-attachments/assets/1334a41f-1808-48e6-b072-9f7c94f53887
+https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
 
 ---
 
