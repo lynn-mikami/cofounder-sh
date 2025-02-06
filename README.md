@@ -4,7 +4,9 @@
     </a>
 </p>
 
-<h1 align="center">Cofounder AI: Open Source AI Agent to Automate Startup Marketing</h1>
+<h1 align="center">Cofounder AI:  Let AI Agent Run Your Influncer Campaign!</h1>
+
+<h3 align="center">An Open Source, AI Agent Powered System to Automate Startup Marketing Tasks</h3>
 
 ```
        ______      ______                    __                    __
