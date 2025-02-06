@@ -6,6 +6,7 @@
 
 <h1 align="center">Cofounder AI: Open Source AI Agent to Automate Startup Marketing</h1>
 
+```
        ______      ______                    __                    __
       / ____/___  / __/ /_  __  ______  ____/ /__  _____ _____  / /_
      / /   / __ \/ /_/ __ \/ / / / __ \/ __  / _ \/ ___// ___/ / __ \
@@ -13,8 +14,8 @@
     \____/\____/_/ /_.___/\__,_/_/ /_/\__,_/\___/_/ (_)____/ / / /_/
 
 
-```
 ./cofounder.sh "help me build an AI startup aiming for $1M MRR"
+
 ```
 
 ---
@@ -37,6 +38,8 @@ All you need to do is this:
 And watch the magic:
 
 https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
+
+
 
 
 ---
