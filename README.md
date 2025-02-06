@@ -13,6 +13,11 @@
     \____/\____/_/ /_.___/\__,_/_/ /_/\__,_/\___/_/ (_)____/ / / /_/
 
 
+```
+./cofounder.sh "help me build an AI startup aiming for $1M MRR"
+```
+
+---
 
 Have you been feeling that being a startup founder, you are drowning in a sea of tiny, small, but time-consuming tasks?
 
@@ -26,7 +31,7 @@ The [AI Agent Cofounder](https://cofounder.sh) is desigend to use the power of L
 All you need to do is this:
 
 ```
-./cofounder.sh "help me build an AI startup aiming for $1M MRR"
+./cofounder.sh "What's trending on Hacker News?"
 ```
 
 And watch the magic:
