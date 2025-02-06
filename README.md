@@ -20,7 +20,7 @@
 
 ---
 
-Project Is Maintained and Powered by:
+Project Is Maintained and Powered by [VERGE MEDIA](https://theverge.media). Connect Your Brand to 10k+ Tech & Influencers with Proven Results!
 
 [![](https://cofounder.sh/verge-media.png)](https://theverge.media)
 
@@ -115,6 +115,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with [LangChain](https://github.com/hwchase17/langchain) & [BrowserUse](https://github.com/browser-use/browser-use)
 - Powered by various LLM providers including OpenAI, Google, and Anthropic
 
-Project Is Maintained and Powered by:
+Project Is Maintained and Powered by [VERGE MEDIA](https://theverge.media). Connect Your Brand to 10k+ Tech & Influencers with Proven Results!
 
 [![](https://cofounder.sh/verge-media.png)](https://theverge.media)
