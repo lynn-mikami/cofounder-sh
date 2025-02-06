@@ -20,7 +20,7 @@
 
 ---
 
-Project Is Maintained and Powered by [VERGE MEDIA](https://theverge.media). Connect Your Brand to 10k+ Tech & Influencers with Proven Results!
+> Project Is Maintained and Powered by [VERGE MEDIA](https://theverge.media). Connect Your Brand to 10k+ Tech & Influencers with Proven Results!
 
 [![](https://cofounder.sh/verge-media.png)](https://theverge.media)
 
