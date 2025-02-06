@@ -20,6 +20,12 @@
 
 ---
 
+Project Is Maintained and Powered by:
+
+[![](https://cofounder.sh/verge-media.png)](https://theverge.media)
+
+---
+
 Have you been feeling that being a startup founder, you are drowning in a sea of tiny, small, but time-consuming tasks?
 
 The [AI Agent Cofounder](https://cofounder.sh) is desigend to use the power of LLM to automate your daily tasks, with a simple prompt.
@@ -38,9 +44,6 @@ All you need to do is this:
 And watch the magic:
 
 https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
-
-
-
 
 ---
 
