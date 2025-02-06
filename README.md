@@ -4,14 +4,7 @@
     </a>
 </p>
 
-<h1 align="center">Cofounder.sh: the Open Source AI Agent CoFounder for Your Startup</h1>
-
-<p align="center">
-    <a href="https://cofounder.sh">
-        <img src="https://private-user-images.githubusercontent.com/4943835/351511052-357da7ef-89d8-4bd5-b494-29e5d6bebd44.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgzMzc4MDksIm5iZiI6MTczODMzNzUwOSwicGF0aCI6Ii80OTQzODM1LzM1MTUxMTA1Mi0zNTdkYTdlZi04OWQ4LTRiZDUtYjQ5NC0yOWU1ZDZiZWJkNDQuUE5HP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDEzMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAxMzFUMTUzMTQ5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9N2NlNmVhZTc4OTQ1MzdlZWVmODg3YTQ1MzQ4NDQwM2UxMDA0ZjA2ZmExZDdlMjEwYTEwNzJiMDVjMjE3NjNmOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.LRW8AV90fKAA_XBkQaHM9P6YFzZWvyMNQRxpNe8at_g" alt="PyPI version" height="48
-        ">
-    </a>
-</p>
+<h1 align="center">Cofounder AI: Open Source AI Agent to Automate Startup Marketing</h1>
 
        ______      ______                    __                    __
       / ____/___  / __/ /_  __  ______  ____/ /__  _____ _____  / /_
@@ -39,6 +32,7 @@ All you need to do is this:
 And watch the magic:
 
 https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
+
 
 ---
 
@@ -110,3 +104,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with [LangChain](https://github.com/hwchase17/langchain) & [BrowserUse](https://github.com/browser-use/browser-use)
 - Powered by various LLM providers including OpenAI, Google, and Anthropic
 
+Project Is Maintained and Powered by:
+
+[![](https://cofounder.sh/verge-media.png)](https://theverge.media)
