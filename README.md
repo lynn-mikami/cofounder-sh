@@ -86,11 +86,7 @@ You might select a prompt from a pre-set list (prompts.md). You can modify the l
 
 ![](./public/step-2.webp)
 
-### LEVEL 3: Mission Start!
-
-![](./public/step-3.webp)
-
-![](./public/step-4.webp) 
+### LEVEL 3: AI Agent Delivers the Report
 
 ![](./public/step-5.webp) 
 
