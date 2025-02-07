@@ -88,9 +88,9 @@ You might select a prompt from a pre-set list (prompts.md). You can modify the l
 
 ### LEVEL 3: Mission Start!
 
-| | |
-| - | - |
-| ![](./public/step-3.webp) | ![](./public/step-4.webp) |
+![](./public/step-3.webp)
+
+![](./public/step-4.webp) 
 
 ## 📚 Roadmap: What We Are Currently Working On
 
