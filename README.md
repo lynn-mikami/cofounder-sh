@@ -46,9 +46,9 @@ All you need to do is this:
 
 For example:
 
-- "What's trending on Hacker News today?"
 - "Research the Top 10 AI Influncers on Twitter and deliver me an influncer marketing strategy plan."
 - "What's the hottest startups that got YC fundings in 2025? Write me a VC investment report."
+- "What's trending on Hacker News today?"
 
 And watch the magic:
 
