@@ -70,7 +70,7 @@ Then bootup the system with: `./cofounder.sh`.
 
 > Want to switch models? Try: `./cofounder.sh --model claude
 
-#### LEVEL 1: Select a Model
+#### LEVEL 1: Select an AI Model
 
 1. 🤖 OpenAI (Production Ready)
 2. 🚀 DeepSeek (Experimental)"
@@ -88,9 +88,9 @@ You might select a prompt from a pre-set list (prompts.md). You can modify the l
 
 ### LEVEL 3: Mission Start!
 
-| | |
-| - | - |
-| ![](./public/step-3.webp) | ![](./public/step-4.webp) |
+![](./public/step-3.webp)
+
+![](./public/step-4.webp) 
 
 ## 📚 Roadmap: What We Are Currently Working On
 
@@ -102,7 +102,7 @@ Cofounder project is still at a very early stage. We are actively adding support
 - File uploading to various websites
 - Complex logic with multiple tasks
 
-## 🤝 Contributing
+## 🤝 Contributing to the Project
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
