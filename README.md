@@ -22,15 +22,17 @@
 
 ---
 
+> NOTE: We have added support for Deepseek! Simply run this command:
+>
+> ./cofounder.sh --model deepseek "Search for top 10 Influncers in AI Twitter"
+
+---
+
 > Project Is Maintained and Powered by [VERGE MEDIA](https://theverge.media). Connect Your Brand to 10k+ Tech & Influencers with Proven Results!
 
 [![](https://cofounder.sh/verge-media.png)](https://theverge.media)
 
 ---
-
-> NOTE: We have added support for Deepseek! Simply run this command:
->
-> ./cofounder.sh --model deepseek "Search for top 10 Influncers in AI Twitter"
 
 Have you been feeling that being a startup founder, you are drowning in a sea of tiny, small, but time-consuming tasks?
 
