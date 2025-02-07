@@ -28,6 +28,10 @@
 
 ---
 
+> NOTE: We have added support for Deepseek! Simply run this command:
+>
+> ./cofounder.sh --model deepseek "Search for top 10 Influncers in AI Twitter"
+
 Have you been feeling that being a startup founder, you are drowning in a sea of tiny, small, but time-consuming tasks?
 
 The [AI Agent Cofounder](https://cofounder.sh) is desigend to use the power of LLM to automate your daily tasks, with a simple prompt.
@@ -53,7 +57,7 @@ https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
 
 First, you need to setup your environment by renamign .env.example to .env, and setup an `OPENAI_API_KEY`.
 
-First run? try: `./cofounder.sh setup`. 
+> First run? try this to setup your environment once for all: `./cofounder.sh setup`. 
 
 Cofounder would request you to enter the website url your startup, and collect a detailed report, save it at `startup.md` file.
 
@@ -61,11 +65,13 @@ This is the basic information about your startup, you might want to edit the des
 
 Then bootup the system with: `./cofounder.sh`.
 
+> Want to switch models? Try: `./cofounder.sh --model claude
+
 #### LEVEL 1: Select your AI partner:
 
 1. 🤖 OpenAI (Production Ready)
-2. 🚀 DeepSeek (Experimental) [Coming Soon]
-3. 🌌 Gemini (Experimental) [Coming Soon]
+2. 🚀 DeepSeek (Experimental)"
+3. 🌌 Claude (Experimental)"
 4. 🦙 Ollama (Experimental) [Coming Soon]
 Enter your choice (1-4) to choose your AI model.
 

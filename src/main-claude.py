@@ -93,7 +93,7 @@ async def main():
     # Initialize DeepSeek model with OpenRouter - Fixed headers configuration
     model = ChatOpenAI(
         base_url="https://openrouter.ai/api/v1",
-        model="deepseek/deepseek-r1:nitro",
+        model="anthropic/claude-3.5-sonnet",
         api_key=SecretStr(api_key),
         temperature=0.7,
         max_tokens=2048,

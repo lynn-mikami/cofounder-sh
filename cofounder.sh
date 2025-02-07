@@ -8,6 +8,8 @@ YELLOW='\033[1;33m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
+MODEL_TYPE="openai"
+
 ensure_venv() {
     if [ -d "venv" ]; then
         # Try to activate the virtual environment
@@ -39,16 +41,32 @@ EOF
 
 execute_task() {
     local task="$1"
+    local model="${2:-openai}"  # Default to openai if not specified
+    
     echo -e "\n${YELLOW}=== Mission Received ====${NC}"
     echo -e "${BLUE}Task: ${CYAN}$task${NC}\n"
     
     show_loading_animation "Powering up AI systems"
-    echo -e "${CYAN}OpenAI systems online!${NC}"
+    
+    case $model in
+        "deepseek")
+            echo -e "${CYAN}DeepSeek systems online!${NC}"
+            script="main-deepseek.py"
+            ;;
+        "claude")
+            echo -e "${CYAN}Claude systems online!${NC}"
+            script="main-claude.py"
+            ;;
+        *)
+            echo -e "${CYAN}OpenAI systems online!${NC}"
+            script="main.py"
+            ;;
+    esac
     
     echo -e "\n${YELLOW}=== Mission Start! ====${NC}"
     show_loading_animation "Initializing AI systems"
     
-    python src/main.py "$task"
+    python src/$script "$task"
 }
 
 show_loading_animation() {
@@ -68,16 +86,36 @@ read_actions() {
     echo -e "\n${YELLOW}=== LEVEL 1: Choose Your AI Companion ====${NC}"
     echo -e "\n${BLUE}Select your AI partner:${NC}"
     echo "1. 🤖 OpenAI (Production Ready)"
-    echo "2. 🚀 DeepSeek (Experimental) [Coming Soon]"
-    echo "3. 🌌 Gemini (Experimental) [Coming Soon]"
+    echo "2. 🚀 DeepSeek (Experimental)"
+    echo "3. 🌌 Claude (Experimental)"
     echo "4. 🦙 Ollama (Experimental) [Coming Soon]"
     read -p "Enter your choice (1-4): " model_choice
     
     show_loading_animation "Powering up AI systems"
     
-    # Force OpenAI selection until others are ready
-    echo -e "${CYAN}OpenAI systems online!${NC}"
-    script="main.py"
+    # Set script based on model choice
+    case $model_choice in
+        1)
+            echo -e "${CYAN}OpenAI systems online!${NC}"
+            script="main.py"
+            ;;
+        2)
+            echo -e "${CYAN}DeepSeek systems online!${NC}"
+            script="main-deepseek.py"
+            ;;
+        3)
+            echo -e "${CYAN}Claude systems online!${NC}"
+            script="main-claude.py"
+            ;;
+        4)
+            echo -e "${RED}Ollama support coming soon!${NC}"
+            exit 1
+            ;;
+        *)
+            echo -e "${RED}Invalid selection. Defaulting to OpenAI.${NC}"
+            script="main.py"
+            ;;
+    esac
 
     echo -e "\n${YELLOW}=== LEVEL 2: Select Your Mission ====${NC}"
     
@@ -163,11 +201,24 @@ show_welcome
 # Main execution logic
 if [ "$1" = "setup" ]; then
     setup_environment
+elif [ "$1" = "--model" ] || [ "$1" = "-m" ]; then
+    if [ -z "$2" ]; then
+        echo -e "${RED}Error: Model type required${NC}"
+        exit 1
+    fi
+    MODEL_TYPE="$2"
+    if [ -n "$3" ]; then
+        # Execute with specified model and task
+        execute_task "${@:3}" "$MODEL_TYPE"
+    else
+        # Run interactive mode with specified model
+        run_main "$MODEL_TYPE"
+    fi
 elif [ -n "$1" ]; then
     # If there's a command line argument, use it as the task
     ensure_venv
-    execute_task "$*"
+    execute_task "$*" "$MODEL_TYPE"
 else
     # No arguments - run interactive mode
-    run_main
+    run_main "$MODEL_TYPE"
 fi
