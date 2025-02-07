@@ -4,7 +4,7 @@
     </a>
 </p>
 
-<h1 align="center">Cofounder AI:  Let AI Agent Run Your Influncer Campaign!</h1>
+<h1 align="center">Cofounder AI:  Let AI Agent Run Your Influencer Campaign!</h1>
 
 <h3 align="center">An Open Source, AI Agent Powered System to Automate Startup Marketing Tasks</h3>
 
@@ -24,7 +24,7 @@
 
 > NOTE: We have added support for Deepseek! Simply run this command:
 >
-> ./cofounder.sh --model deepseek "Search for top 10 Influncers in AI Twitter"
+> ./cofounder.sh --model deepseek "Search for top 10 Influencers in AI Twitter"
 
 ---
 
@@ -34,20 +34,21 @@
 
 ---
 
-Have you been feeling that being a startup founder, you are drowning in a sea of tiny, small, but time-consuming tasks?
+We get it, you are a busy Startup founder who needs to scale your marketing team with little time. 
 
-The [AI Agent Cofounder](https://cofounder.sh) is desigend to use the power of LLM to automate your daily tasks, with a simple prompt.
-
-- Need to know what's the hottest startups that got YC fundings
-- Need an Intern to conduct market analysis on your competitors?
-- Want to replace a Marketing Agency to craft an Influncer Marketing Campaign Strategy?
-- Need to hire an army of Reddit posters to promote your product on auto-pilot?
+Try [Cofounder.sh](https://cofounder.sh)! Harness the power of AI Agents to create a Marketing Tea that is fully automated, and comman your team with a single prompt!
 
 All you need to do is this:
 
 ```
-./cofounder.sh "What's trending on Hacker News?"
+./cofounder.sh "Your Prompt"
 ```
+
+For example:
+
+"What's trending on Hacker News today?"
+"Research the Top 10 AI Influncers on Twitter and deliver me an influncer marketing strategy plan."
+"What's the hottest startups that got YC fundings in 2025? Write me a VC investment report."
 
 And watch the magic:
 
@@ -55,7 +56,7 @@ https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
 
 ---
 
-## 🛠 How to Setup Your AI Cofounder
+## 🛠 How to Setup Cofounder.sh Agents
 
 First, you need to setup your environment by renamign .env.example to .env, and setup an `OPENAI_API_KEY`.
 
@@ -69,7 +70,7 @@ Then bootup the system with: `./cofounder.sh`.
 
 > Want to switch models? Try: `./cofounder.sh --model claude
 
-#### LEVEL 1: Select your AI partner:
+#### LEVEL 1: Select a Model
 
 1. 🤖 OpenAI (Production Ready)
 2. 🚀 DeepSeek (Experimental)"
@@ -79,13 +80,13 @@ Enter your choice (1-4) to choose your AI model.
 
 ![](./public/step-1.webp)
 
-LEVEL 2: Select Your Mission
+#### LEVEL 2: Enter a Prompt
 
-You might select a mission from a pre-set list. You can modify the list by editing the `actions.md` file.
+You might select a prompt from a pre-set list (prompts.md). You can modify the list by editing the `actions.md` file.
 
 ![](./public/step-2.webp)
 
-LEVEL 3: Mission Start!
+### LEVEL 3: Mission Start!
 
 | | |
 | - | - |

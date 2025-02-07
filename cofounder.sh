@@ -119,8 +119,8 @@ read_actions() {
 
     echo -e "\n${YELLOW}=== LEVEL 2: Select Your Mission ====${NC}"
     
-    if [ ! -f "actions.md" ]; then
-        echo -e "${RED}Critical Error: Mission database (actions.md) not found${NC}"
+    if [ ! -f "prompts.md" ]; then
+        echo -e "${RED}Critical Error: Mission database (prompts.md) not found${NC}"
         exit 1
     fi
 
@@ -132,7 +132,7 @@ read_actions() {
             continue
         fi
         tasks+=("$line")
-    done < <(sed 's/^[[:space:]]*//' actions.md)
+    done < <(sed 's/^[[:space:]]*//' prompts.md)
 
     if [ ${#tasks[@]} -eq 0 ]; then
         echo -e "${RED}Error: No missions available${NC}"
