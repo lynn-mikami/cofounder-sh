@@ -6,7 +6,7 @@
 
 <h1 align="center">Cofounder AI:  Let AI Agent Run Your Influencer Campaign!</h1>
 
-<h3 align="center">An Open Source, AI Agent Powered System to Automate Startup Marketing Tasks</h3>
+<h3 align="center">Open Source Marketing Team Automated by AI Agents</h3>
 
 ```
        ______      ______                    __                    __
