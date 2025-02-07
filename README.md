@@ -92,6 +92,8 @@ You might select a prompt from a pre-set list (prompts.md). You can modify the l
 
 ![](./public/step-4.webp) 
 
+![](./public/step-5.webp) 
+
 ## 📚 Roadmap: What We Are Currently Working On
 
 Cofounder project is still at a very early stage. We are actively adding support to these features:
