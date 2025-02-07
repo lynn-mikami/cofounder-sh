@@ -4,9 +4,9 @@
     </a>
 </p>
 
-<h1 align="center">Cofounder AI:  Let AI Agent Run Your Influencer Campaign!</h1>
+<h1 align="center">Cofounder AI: Open Source Marketing Team Automated by AI Agents </h1>
 
-<h3 align="center">Open Source Marketing Team Automated by AI Agents</h3>
+<h3 align="center">Hire an Automated Marketing Team Powered by AI Agents!</h3>
 
 ```
        ______      ______                    __                    __
