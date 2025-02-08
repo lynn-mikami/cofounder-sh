@@ -46,7 +46,7 @@ All you need to do is this:
 
 For example:
 
-- "Research the Top 10 AI Influncers on Twitter and deliver me an influncer marketing strategy plan."
+- "Research the Top 10 AI Influencers on Twitter and deliver me an Influencer marketing strategy plan."
 - "What's the hottest startups that got YC fundings in 2025? Write me a VC investment report."
 - "What's trending on Hacker News today?"
 
