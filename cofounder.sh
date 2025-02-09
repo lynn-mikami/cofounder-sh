@@ -82,7 +82,7 @@ show_loading_animation() {
 }
 
 run_examples() {
-    echo -e "\n${YELLOW}=== Available Examples ====${NC}"
+    echo -e "\n${YELLOW}=== Voyager Mode ====${NC}"
     
     if [ ! -d "examples" ]; then
         echo -e "${RED}Error: examples directory not found${NC}"
@@ -101,14 +101,15 @@ run_examples() {
     
     echo -e "\n${BLUE}Select an example to run:${NC}\n"
     
-    # Display all examples with numbers and clean names
     for i in "${!examples[@]}"; do
-        # Convert filename to readable format:
-        # 1. Remove 'examples/' prefix and '.py' extension
-        # 2. Replace underscores with spaces
-        # 3. Capitalize only the first letter of the entire name
-        clean_name=$(basename "${examples[$i]}" .py | sed 's/_/ /g' | sed 's/\b\(.\)/\u\1/')
-        echo "$((i+1)). ${clean_name}"
+        base=$(basename "${examples[$i]}" .py)
+        echo "After basename: $base"
+        
+        spaces=$(echo "$base" | sed 's/_/ /g')
+        echo "After spaces: $spaces"
+        
+        clean_name=$(echo "$spaces" | sed -E 's/\<([a-z])/\U\1/g')
+        echo "Final result: $clean_name"
     done
     
     # Get user choice
@@ -246,7 +247,7 @@ show_welcome
 # Main execution logic
 if [ "$1" = "setup" ]; then
     setup_environment
-elif [ "$1" = "--examples" ]; then
+elif [ "$1" = "--voyager" ]; then
     ensure_venv
     run_examples
 elif [ "$1" = "--model" ] || [ "$1" = "-m" ]; then
