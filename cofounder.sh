@@ -104,10 +104,6 @@ run_examples() {
     # Display all examples with numbers and clean names
     for i in "${!examples[@]}"; do
         # Convert filename to readable format:
-        # 1. Remove 'examples/' prefix and '.py' extension
-        # 2. Replace underscores with spaces
-        # 3. Capitalize only the first letter of the entire name
-        # 4. Replace 'b' with 'u' in the filename
         clean_name=$(basename "${examples[$i]}" .py | sed 's/_/ /g' | sed -E 's/\<([a-z])/\U\1/g')
         echo "$((i+1)). ${clean_name}"
     done

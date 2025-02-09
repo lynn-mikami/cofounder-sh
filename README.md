@@ -54,6 +54,24 @@ And watch the magic:
 
 https://github.com/user-attachments/assets/b18b78ce-0816-4a3e-ab60-c37131429362
 
+Want to go through more examples? Let's test them out in the "Voyager Mode"!
+
+```
+./cofounder.sh --voyager
+```
+
+Using AI Agent to Solve Captchas:
+
+![](./public/solve_captcha.webp)
+
+Use AI Agent to Post On Twitter:
+
+![](./public/post_twitter.webp)
+
+Using AI Agent to Check Appointments:
+
+![](./public/check_appointment.webp)
+
 ---
 
 ## 🛠 How to Setup Cofounder.sh Agents
@@ -89,6 +107,7 @@ You might select a prompt from a pre-set list (prompts.md). You can modify the l
 ### LEVEL 3: AI Agent Delivers the Report
 
 ![](./public/step-5.webp) 
+
 
 ## 📚 Roadmap: What We Are Currently Working On
 
