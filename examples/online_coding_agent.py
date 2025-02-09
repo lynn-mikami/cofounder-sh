@@ -2,12 +2,16 @@ import os
 import sys
 
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv  # Add this import
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import asyncio
 
 from browser_use import Agent, Browser, Controller
+
+# Add this line to load environment variables
+load_dotenv()
 
 async def main():
     browser = Browser()

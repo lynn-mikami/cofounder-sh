@@ -81,6 +81,51 @@ show_loading_animation() {
     echo
 }
 
+run_examples() {
+    echo -e "\n${YELLOW}=== Available Examples ====${NC}"
+    
+    if [ ! -d "examples" ]; then
+        echo -e "${RED}Error: examples directory not found${NC}"
+        exit 1
+    fi
+    
+    examples=()
+    while IFS= read -r -d $'\0' file; do
+        examples+=("$file")
+    done < <(find examples -name "*.py" -print0)
+    
+    if [ ${#examples[@]} -eq 0 ]; then
+        echo -e "${RED}No example files found in examples directory${NC}"
+        exit 1
+    fi
+    
+    echo -e "\n${BLUE}Select an example to run:${NC}\n"
+    
+    # Display all examples with numbers and clean names
+    for i in "${!examples[@]}"; do
+        # Convert filename to readable format:
+        # 1. Remove 'examples/' prefix and '.py' extension
+        # 2. Replace underscores with spaces
+        # 3. Capitalize only the first letter of the entire name
+        clean_name=$(basename "${examples[$i]}" .py | sed 's/_/ /g' | sed 's/\b\(.\)/\u\1/')
+        echo "$((i+1)). ${clean_name}"
+    done
+    
+    # Get user choice
+    read -p "Enter your choice (1-${#examples[@]}): " choice
+    
+    if [ "$choice" -ge 1 ] && [ "$choice" -le "${#examples[@]}" ]; then
+        selected_example="${examples[$((choice-1))]}"
+        echo -e "\n${CYAN}Running example: ${BLUE}${selected_example}${NC}"
+        show_loading_animation "Preparing example"
+        python "$selected_example"
+        echo -e "${GREEN}✅ Example completed: ${selected_example}${NC}"
+    else
+        echo -e "${RED}Invalid selection${NC}"
+        exit 1
+    fi
+}
+
 read_actions() {
     # Model selection with retro game style
     echo -e "\n${YELLOW}=== LEVEL 1: Choose Your AI Companion ====${NC}"
@@ -201,6 +246,9 @@ show_welcome
 # Main execution logic
 if [ "$1" = "setup" ]; then
     setup_environment
+elif [ "$1" = "--examples" ]; then
+    ensure_venv
+    run_examples
 elif [ "$1" = "--model" ] || [ "$1" = "-m" ]; then
     if [ -z "$2" ]; then
         echo -e "${RED}Error: Model type required${NC}"
